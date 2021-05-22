@@ -1,0 +1,14 @@
+.layout {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 56px 1fr;
+  grid-template-columns: 1fr;
+  background: s; }
+
+.navbar {
+  height: 56px;
+  background: green; }
+
+.content {
+  height: 100%;
+  background: salmon; }
