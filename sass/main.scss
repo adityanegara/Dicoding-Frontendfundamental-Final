@@ -1,20 +1,18 @@
+@import  '_constant';
+@import '_header';
+@import '_animation';
+@import '_media';
 
-$color-primary : green;
-$color-secondary : salmon;
-.layout {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 56px 1fr;
-    grid-template-columns: 1fr;
-    background : s
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ 
 }
 
-.navbar{
-    height: 56px;
-    background: $color-primary;
-}
-
-.content {
-    height: 100%;
-    background: $color-secondary;
+body{
+    font-family: $monsterrat;
+    font-weight: $font-regular;
 }

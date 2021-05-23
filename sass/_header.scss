@@ -1,0 +1,110 @@
+.main-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    height: 65px;
+    width: 100vw;
+    padding: 0 10vw;
+    color: $color-black;
+    z-index: 1;
+    transition: 0.4s ease-out;
+
+    .logo{
+    
+        font-weight: $font-bold;
+        transition: ease-out 0.4s;
+        font-size: 1.5rem;
+    }
+    .logo:hover{
+        color: $color-pink;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+   
+    }
+    .nav-links{ 
+        display: flex;
+        list-style: none;
+        .nav-link{
+            transition: 
+                opacity 0.8s ease-in-out,
+                transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                &:nth-of-type(2){
+                    transition-delay: 0.1s;
+                }
+                &:nth-of-type(3){
+                    transition-delay: 0.2s;
+                }
+                &:nth-of-type(4){
+                    transition-delay: 0.2s;
+                }
+            a{
+                margin: 0.2rem;
+                padding: 1rem 0.5rem;
+                transition: 0.4s ease-out;
+                padding: 15px 25px;
+                border-radius: 10px;
+            }
+            a:hover{
+                background: $color-pink;
+                color: $color-white;
+            }
+        }
+    }
+    .menu-icon{
+        position: relative;
+        padding: 26px 10px;
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+        &__line{
+            display: block;
+            position: relative;
+            background-color: $color-black;
+            height: 2px;
+            width: 20px;
+            border-radius: 4px;
+            transition: background 0.8s ease ;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                background-color: $color-black;
+                transition: background 0.8s ease ;
+            }
+            &::before{
+                transform: translateY(-5px);
+            }
+            &::after{
+                transform: translateY(5px);
+            }
+        }
+    }
+
+    .menu-btn{
+
+        display: none;
+    }
+
+    &.scrolled{
+        height: 70px;
+        background-color: $color-black;
+        color: $color-white;
+
+        .menu-icon{
+            &__line,
+            &__line::before,
+            &__line::after{
+                background-color: $color-white;
+            }
+        }
+    }
+
+ 
+    
+}
