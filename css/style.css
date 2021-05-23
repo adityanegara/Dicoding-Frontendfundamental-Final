@@ -19,24 +19,26 @@
   .main-header a {
     text-decoration: none;
     color: inherit; }
-  .main-header .nav-links {
+  .main-header .nav-group {
+    margin-bottom: 0px;
+    padding-left: 0px;
     display: flex;
     list-style: none; }
-    .main-header .nav-links .nav-link {
+    .main-header .nav-group .custom-nav-link {
       transition: opacity 0.8s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-      .main-header .nav-links .nav-link:nth-of-type(2) {
+      .main-header .nav-group .custom-nav-link:nth-of-type(2) {
         transition-delay: 0.1s; }
-      .main-header .nav-links .nav-link:nth-of-type(3) {
+      .main-header .nav-group .custom-nav-link:nth-of-type(3) {
         transition-delay: 0.2s; }
-      .main-header .nav-links .nav-link:nth-of-type(4) {
+      .main-header .nav-group .custom-nav-link:nth-of-type(4) {
         transition-delay: 0.2s; }
-      .main-header .nav-links .nav-link a {
+      .main-header .nav-group .custom-nav-link a {
         margin: 0.2rem;
         padding: 1rem 0.5rem;
         transition: 0.4s ease-out;
         padding: 15px 25px;
         border-radius: 10px; }
-      .main-header .nav-links .nav-link a:hover {
+      .main-header .nav-group .custom-nav-link a:hover {
         background: #E46F80;
         color: #FDFCFC; }
   .main-header .menu-icon {
@@ -138,7 +140,7 @@
       .main-header .menu-icon__line::after {
         animation: closedBtm 0.8s backwards;
         animation-direction: reverse; }
-  .main-header .nav-links {
+  .main-header .nav-group {
     position: absolute;
     top: 0;
     left: 0;
@@ -154,30 +156,30 @@
     background-color: #161211;
     transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
     clip-path: circle(200px at top right); }
-    .main-header .nav-links .nav-link {
+    .main-header .nav-group .custom-nav-link {
       opacity: 0;
       transform: translateX(100%);
       width: 100%;
       text-align: center; }
-      .main-header .nav-links .nav-link a {
+      .main-header .nav-group .custom-nav-link a {
         display: block;
         padding: 2rem 0; }
-  .main-header .menu-btn:checked ~ .nav-links {
+  .main-header .menu-btn:checked ~ .nav-group {
     opacity: 1;
     clip-path: circle(100% at center); }
-    .main-header .menu-btn:checked ~ .nav-links .nav-link {
+    .main-header .menu-btn:checked ~ .nav-group .custom-nav-link {
       opacity: 1;
       transform: translateX(0);
       transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-      .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(1) {
+      .main-header .menu-btn:checked ~ .nav-group .custom-nav-link:nth-of-type(1) {
         transition-delay: 0.7s; }
-      .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(2) {
+      .main-header .menu-btn:checked ~ .nav-group .custom-nav-link:nth-of-type(2) {
         transition-delay: 0.8s; }
-      .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
+      .main-header .menu-btn:checked ~ .nav-group .custom-nav-link:nth-of-type(3) {
         transition-delay: 0.9s; }
-      .main-header .menu-btn:checked ~ .nav-links .nav-link a {
+      .main-header .menu-btn:checked ~ .nav-group .custom-nav-link a {
         border-radius: 20px; }
-      .main-header .menu-btn:checked ~ .nav-links .nav-link a:hover {
+      .main-header .menu-btn:checked ~ .nav-group .custom-nav-link a:hover {
         margin-left: 5%;
         margin-right: 5%;
         border-radius: 20px;

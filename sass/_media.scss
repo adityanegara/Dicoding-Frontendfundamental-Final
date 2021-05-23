@@ -18,7 +18,7 @@
                 }
             }
         } 
-        .nav-links{
+        .nav-group{
             position: absolute;
             top: 0;
             left: 0;
@@ -35,7 +35,7 @@
             transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;  
             clip-path: circle(200px at top right);
 
-            .nav-link {
+            .custom-nav-link {
                 opacity: 0;
                 transform: translateX(100%);
                 width: 100%;
@@ -48,11 +48,11 @@
             }
         }
 
-       .menu-btn:checked ~ .nav-links{
+       .menu-btn:checked ~ .nav-group{
            opacity: 1;
            clip-path: circle(100% at center );
 
-           .nav-link{
+           .custom-nav-link{
           
                opacity: 1;
                transform: translateX(0);
