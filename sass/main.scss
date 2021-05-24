@@ -1,10 +1,9 @@
 @import  '_constant';
-@import '_header';
 @import '_animation';
-@import '_cta';
-@import '_media';
-
-
+@import './section/header/_header';
+@import './section/header/_media';
+@import './section/cta';
+@import './section/filter';
 
 *{
     box-sizing: border-box;
@@ -16,4 +15,26 @@
 body{
     font-family: $main-font;
     font-weight: $font-light;
+}
+
+.form-control:focus {
+    border-color: $color-primary;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px $color-primary;
+}
+
+.font-s-05{
+    font-size: 0.75em;
+}
+
+footer{
+    background-color: $color-black;
+    color: $color-white;
+    a{
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    a:hover{
+        color: $color-primary;
+    }
 }

@@ -1,85 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&display=swap");
-.main-header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
-  width: 100vw;
-  padding: 0 10vw;
-  color: #161211;
-  z-index: 1;
-  transition: 0.4s ease-out; }
-  .main-header .logo {
-    font-weight: 600;
-    transition: ease-out 0.4s;
-    font-size: 1.5rem; }
-  .main-header .logo:hover {
-    color: #532F17; }
-  .main-header a {
-    text-decoration: none;
-    color: inherit; }
-  .main-header .nav-group {
-    margin-bottom: 0px;
-    padding-left: 0px;
-    display: flex;
-    list-style: none; }
-    .main-header .nav-group .custom-nav-link {
-      transition: opacity 0.8s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-      .main-header .nav-group .custom-nav-link:nth-of-type(2) {
-        transition-delay: 0.1s; }
-      .main-header .nav-group .custom-nav-link:nth-of-type(3) {
-        transition-delay: 0.2s; }
-      .main-header .nav-group .custom-nav-link:nth-of-type(4) {
-        transition-delay: 0.2s; }
-      .main-header .nav-group .custom-nav-link a {
-        margin: 0.2rem;
-        padding: 1rem 0.5rem;
-        transition: 0.4s ease-out;
-        padding: 15px 25px;
-        border-radius: 10px; }
-      .main-header .nav-group .custom-nav-link a:hover {
-        background: #532F17;
-        color: #FDFCFC; }
-  .main-header .menu-icon {
-    position: relative;
-    padding: 26px 10px;
-    cursor: pointer;
-    z-index: 1;
-    display: none; }
-    .main-header .menu-icon__line {
-      display: block;
-      position: relative;
-      background-color: #161211;
-      height: 2px;
-      width: 20px;
-      border-radius: 4px;
-      transition: background 0.8s ease; }
-      .main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        border-radius: 4px;
-        background-color: #161211;
-        transition: background 0.8s ease; }
-      .main-header .menu-icon__line::before {
-        transform: translateY(-5px); }
-      .main-header .menu-icon__line::after {
-        transform: translateY(5px); }
-  .main-header .menu-btn {
-    display: none; }
-  .main-header.scrolled {
-    height: 70px;
-    background-color: #161211;
-    color: #FDFCFC; }
-    .main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
-      background-color: #FDFCFC; }
-
 @keyframes pulse {
   from {
-    box-shadow: 0 0 0 0px #532F17;
-    background-color: #532F17; }
+    box-shadow: 0 0 0 0px #DDAC72;
+    background-color: #DDAC72; }
   to {
     box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0); } }
@@ -128,37 +51,84 @@
   100% {
     transform: translateY(0px) rotate(90deg); } }
 
-#cta-section {
-  height: 1000px;
-  padding-top: 5rem;
-  margin-left: 10%;
-  margin-right: 10%; }
-  #cta-section .card {
-    border-radius: 25px;
-    background-image: url("../img/cook.jpg");
-    background-size: cover; }
-    #cta-section .card p {
-      color: #FDFCFC; }
-
-.btn-cta {
+.main-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 0 10vw;
   color: #161211;
-  background-color: #FDFCFC;
-  transition: 0.2s ease-in; }
+  z-index: 1;
+  transition: 0.4s ease-out; }
+  .main-header .logo {
+    font-weight: 600;
+    transition: ease-out 0.4s;
+    font-size: 1.5rem; }
+  .main-header .logo:hover {
+    color: #DDAC72; }
+  .main-header a {
+    text-decoration: none;
+    color: inherit; }
+  .main-header .nav-group {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: flex;
+    list-style: none; }
+    .main-header .nav-group .custom-nav-link {
+      transition: opacity 0.8s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      .main-header .nav-group .custom-nav-link:nth-of-type(2) {
+        transition-delay: 0.1s; }
+      .main-header .nav-group .custom-nav-link:nth-of-type(3) {
+        transition-delay: 0.2s; }
+      .main-header .nav-group .custom-nav-link:nth-of-type(4) {
+        transition-delay: 0.2s; }
+      .main-header .nav-group .custom-nav-link a {
+        margin: 0.2rem;
+        padding: 1rem 0.5rem;
+        transition: 0.4s ease-out;
+        padding: 15px 25px;
+        border-radius: 10px; }
+      .main-header .nav-group .custom-nav-link a:hover {
+        background: #DDAC72;
+        color: #FDFCFC; }
+  .main-header .menu-icon {
+    position: relative;
+    padding: 26px 10px;
+    cursor: pointer;
+    z-index: 1;
+    display: none; }
+    .main-header .menu-icon__line {
+      display: block;
+      position: relative;
+      background-color: #161211;
+      height: 2px;
+      width: 20px;
+      border-radius: 4px;
+      transition: background 0.8s ease; }
+      .main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #161211;
+        transition: background 0.8s ease; }
+      .main-header .menu-icon__line::before {
+        transform: translateY(-5px); }
+      .main-header .menu-icon__line::after {
+        transform: translateY(5px); }
+  .main-header .menu-btn {
+    display: none; }
+  .main-header.scrolled {
+    height: 70px;
+    background-color: #161211;
+    color: #FDFCFC; }
+    .main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
+      background-color: #FDFCFC; }
 
-.btn-cta:hover {
-  background-color: #DDAC72;
-  color: #FDFCFC; }
-
-@media screen and (max-width: 767px) {
-  #cta-section {
-    margin-left: 0%;
-    margin-right: 0%; }
-    #cta-section .card {
-      text-align: center;
-      border-radius: 0px;
-      background-image: url("../img/cook.jpg"); } }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 785px) {
   .main-header .menu-icon {
     display: block; }
     .main-header .menu-icon__line {
@@ -213,7 +183,7 @@
         margin-left: 5%;
         margin-right: 5%;
         border-radius: 20px;
-        background-color: #532F17; }
+        background-color: #DDAC72; }
   .main-header .menu-btn:checked ~ .menu-icon {
     border-radius: 50%;
     animation: pulse 1s; }
@@ -227,6 +197,83 @@
         background-color: #FDFCFC;
         animation: openBtm 0.8s forwards; } }
 
+#cta-section {
+  padding-top: 5rem;
+  margin-left: 10%;
+  margin-right: 10%; }
+  #cta-section .card {
+    border-radius: 25px;
+    background-image: url("../img/cook.jpg");
+    background-size: cover; }
+    #cta-section .card p {
+      color: #FDFCFC; }
+
+.btn-cta {
+  color: #161211;
+  background-color: #FDFCFC;
+  transition: 0.2s ease-in; }
+
+.btn-cta:hover {
+  background-color: #DDAC72;
+  color: #FDFCFC; }
+
+@media screen and (max-width: 767px) {
+  #cta-section {
+    margin-left: 0%;
+    margin-right: 0%; }
+    #cta-section .card {
+      text-align: center;
+      border-radius: 0px;
+      background-image: url("../img/cook.jpg"); } }
+
+#filter-section {
+  margin-left: 10vw;
+  margin-right: 10vw; }
+  #filter-section #food-category .card {
+    color: #FDFCFC;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0px;
+    background-size: cover;
+    border: none;
+    transition: ease-in 0.3s; }
+  #filter-section #food-category .card:hover {
+    filter: brightness(120%); }
+  #filter-section #food-category #card-beef {
+    background-image: url("../img/beef.jpg"); }
+  #filter-section #food-category #card-lamb {
+    background-image: url("../img/lamb.jpg"); }
+  #filter-section #food-category #card-chicken {
+    background-image: url("../img/chicken.jpg"); }
+  #filter-section #food-category #card-dessert {
+    background-image: url("../img/desert.jpg"); }
+  #filter-section #food-category #card-vegetables {
+    background-image: url("../img/salad.jpg"); }
+  #filter-section #food-category #card-seafood {
+    background-image: url("../img/seafood.jpg"); }
+  #filter-section #result-section .input-group input {
+    background-color: #F8F8F7  !important;
+    border: none;
+    border-radius: 25px; }
+  #filter-section #result-section button {
+    border-radius: 25px; }
+  #filter-section #result-section button:hover {
+    border-radius: 25px; }
+  #filter-section #result-section .card {
+    transition: ease-in 0.2s;
+    border-radius: 20px;
+    cursor: pointer; }
+    #filter-section #result-section .card img {
+      height: 10rem;
+      border-radius: 20px; }
+  #filter-section #result-section .card:hover {
+    color: #FDFCFC;
+    background-color: #DDAC72; }
+
+@media screen and (max-width: 991px) {
+  #result-section {
+    margin-top: 8%; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -235,3 +282,19 @@
 body {
   font-family: "Mitr", sans-serif;
   font-weight: 400; }
+
+.form-control:focus {
+  border-color: #DDAC72;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #DDAC72; }
+
+.font-s-05 {
+  font-size: 0.75em; }
+
+footer {
+  background-color: #161211;
+  color: #FDFCFC; }
+  footer a {
+    text-decoration: none;
+    color: #FDFCFC; }
+  footer a:hover {
+    color: #DDAC72; }

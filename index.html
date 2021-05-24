@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="icon" href="./img/F ya.png">
     <title>Foodya</title>
 </head>
 <body>
@@ -39,32 +40,182 @@
             <div class="card" >
                 <div class="card-body ms-5 me-5 mt-3 pb-5 pt-5">
                   <div class="row">
-                    <div class="col-lg-5 col-md-6 col-12 mt-5">
-                        <div class="col-lg-12 ">
-                            <p class="card-title  h1">30 Days <br> Recipe Chalange</h2>
-                        </div>
-                        <div class="col-12 mt-5">
-                            <p class=" h5">For 30 days straight chalange yourself to creating unique cuisine all around the globe!</p>
-                        </div>
-                        <div class="col-12 mt-5">
-                            <a href="#">
-                                <div class="d-grip gap-2">
-
-                                    <button type="button" class="btn btn-cta btn-block">How its gonna work</button>
-                                </div>
-
-                                
-                            </a>
+                        <div class="col-lg-5 col-md-6 col-12 mt-5">
+                            <div class="col-lg-12 ">
+                                <p class="card-title  h1">30 Days <br> Recipe Chalange</h2>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <p class=" h5">For 30 days straight chalange yourself to creating unique cuisine all around the globe!</p>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <a href="#">
+                                    <div class="d-grip gap-2">
+                                        <button type="button" class="btn btn-cta btn-block">How its gonna work</button>
+                                    </div>                  
+                                </a>
+                            </div>
                         </div>
                     </div>      
                 </div>
             </div>
         </div>
-       
     </div>
+    <div id="filter-section" class="mt-4 pb-5">
+        <div class="row">
+            <div id="food-category" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <p class="h5">Cuisine By Categories</p>
+                <div class="row">
+                    <div class="col-6 mt-2">
+                      <div class="card" id="card-beef">
+                          <div class="card-body" >
+                            <h5 class="card-title">Beef</h5>
+                            
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 mt-2">
+                        <div class="card" id="card-chicken" >
+                            <div class="card-body" >
+                              <h5 class="card-title">Chicken</h5>
+                              
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-6 mt-2">
+                        <div class="card" id="card-lamb" >
+                            <div class="card-body">
+                              <h5 class="card-title">Goat</h5>
+                              
+                            </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-6 mt-2">
+                          <div class="card" id="card-dessert" >
+                              <div class="card-body">
+                                <h5 class="card-title">Dessert</h5>
+                                
+                              </div>
+                            </div>
+                      </div>
+
+                      <div class="col-6 mt-2">
+                        <div class="card" id="card-vegetables" >
+                            <div class="card-body">
+                              <h5 class="card-title">Salad</h5>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mt-2">
+                        <div class="card" id="card-seafood">
+                            <div class="card-body">
+                              <h5 class="card-title">Seafood</h5>
+                            </div>
+                        </div>
+                      </div>
+
+  
+
+                      
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="result-section">
+                <div class="row" id="search-bar">
+                    <div class="col-10 ">
+
+                        <div class="input-group" >
+                            <input type="text" class="form-control custom-input" style="border-radius: 25px;" placeholder="Search cuisine...">
     
-        
-        <script src="js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-dark"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/raspberry_cupcake.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Raspberry Cupcake</p>
+                                <p class="card-text font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="  float-end font-s-05 mt-1 ">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/vegetable_salad.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Vegetable Salad</p>
+                                <p class="card-text  font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="ms-3  float-end font-s-05 mt-1">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/pesto_pasta.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Pesto Pasta</p>
+                                <p class="card-text  font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="ms-3  float-end font-s-05 mt-1">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/sirloin_steak.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Sirloin Steak</p>
+                                <p class="card-text  font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="ms-3  float-end font-s-05 mt-1">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/dumplings.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Dumplings</p>
+                                <p class="card-text  font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="ms-3  float-end font-s-05 mt-1">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-3">
+                        <div class="card" >
+                            <img src="./img/bacon_and_egg.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Bacon and Egg</p>
+                                <p class="card-text  font-s-05"><i class="far fa-star"></i> 4.9(28) <span class="ms-3  float-end font-s-05 mt-1">By Aditya Negara</span></p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="" href="https://mdbootstrap.com/">aditya_negara</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+
+    
+   
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

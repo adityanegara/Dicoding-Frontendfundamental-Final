@@ -1,0 +1,87 @@
+#filter-section{
+   margin-left: 10vw;
+   margin-right: 10vw;
+   
+   #food-category{
+       .card{
+           color: $color-white;
+            cursor: pointer;
+           border-radius: 10px;
+           padding: 0px;
+           background-size: cover;
+           border: none;
+           transition: ease-in 0.3s;    
+       }
+
+       .card:hover{
+        filter: brightness(120%);
+       }
+
+       #card-beef{ 
+        background-image: url('../img/beef.jpg');
+       }
+
+       #card-lamb{
+         background-image: url('../img/lamb.jpg');
+       }
+       
+
+       #card-chicken{
+           background-image: url('../img/chicken.jpg');
+       }
+
+       #card-dessert{
+           background-image: url('../img/desert.jpg');
+       }
+
+       #card-vegetables{
+           background-image: url('../img/salad.jpg');
+       }
+
+       #card-seafood{
+           background-image: url('../img/seafood.jpg');
+       }
+   }
+
+   #result-section{
+       .input-group{
+            input{
+                background-color:#F8F8F7  !important;
+                border: none;
+                border-radius: 25px;
+            }
+       }
+
+       button{
+           border-radius: 25px;
+       }
+       button:hover{
+    
+        border-radius: 25px;
+       }
+
+       .card{
+        transition: ease-in 0.2s;
+        border-radius: 20px;
+        cursor: pointer;
+           img{
+               height: 10rem;
+               border-radius: 20px;
+           }
+       }
+
+       .card:hover{
+           color: $color-white;
+           background-color: $color-secondary;
+       }
+       
+   }
+
+ 
+}
+
+@media screen and(max-width : 991px){
+    #result-section{
+        margin-top: 8%;
+    }
+}
