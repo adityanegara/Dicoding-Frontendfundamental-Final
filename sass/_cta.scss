@@ -1,0 +1,31 @@
+#cta-section{
+    height: 1000px; 
+   
+    padding-top: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    .card{
+    
+        border-radius: 25px;
+        background-image: url('../img/cook.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        p{
+            color: $color-white;
+        }
+    }
+    
+}
+
+.btn-cta{
+    color: $color-black;
+    background-color: $color-white;
+
+}
+
+.btn-cta:hover{
+    background-color: $color-secondary;
+    color: $color-white;
+
+}

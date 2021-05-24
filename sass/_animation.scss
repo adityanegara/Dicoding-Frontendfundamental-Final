@@ -1,7 +1,7 @@
 @keyframes pulse {
     from{
-        box-shadow: 0 0 0 0px $color-pink;
-        background-color: $color-pink;
+        box-shadow: 0 0 0 0px $color-primary;
+        background-color: $color-primary;
     }
     to{
         box-shadow: 0 0 0 1000px rgba(255,255,255,0);

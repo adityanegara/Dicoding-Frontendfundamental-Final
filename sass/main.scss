@@ -1,6 +1,7 @@
 @import  '_constant';
 @import '_header';
 @import '_animation';
+@import '_cta';
 @import '_media';
 
 
@@ -13,6 +14,6 @@
 }
 
 body{
-    font-family: $monsterrat;
-    font-weight: $font-regular;
+    font-family: $main-font;
+    font-weight: $font-light;
 }
