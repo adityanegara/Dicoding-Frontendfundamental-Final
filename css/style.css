@@ -232,9 +232,10 @@
     padding: 0px;
     background-size: cover;
     border: none;
-    transition: ease-in 0.3s; }
+    transition: ease-in 0.2s; }
   #filter-section #food-category .card:hover {
-    filter: brightness(120%); }
+    color: #DDAC72;
+    filter: brightness(90%); }
   #filter-section #food-category #card-beef {
     background-image: url("../img/beef.jpg"); }
   #filter-section #food-category #card-lamb {

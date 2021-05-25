@@ -10,11 +10,12 @@
            padding: 0px;
            background-size: cover;
            border: none;
-           transition: ease-in 0.3s;    
+           transition: ease-in 0.2s;    
        }
 
        .card:hover{
-        filter: brightness(120%);
+           color: $color-primary;
+         filter: brightness(90%);
        }
 
        #card-beef{ 
