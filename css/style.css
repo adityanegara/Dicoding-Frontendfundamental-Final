@@ -248,27 +248,27 @@
     background-image: url("../img/salad.jpg"); }
   #filter-section #food-category #card-seafood {
     background-image: url("../img/seafood.jpg"); }
-  #filter-section #result-section .input-group input {
+  #filter-section #result-search .input-group input {
     background-color: #F8F8F7  !important;
     border: none;
     border-radius: 25px; }
-  #filter-section #result-section button {
+  #filter-section #result-search button {
     border-radius: 25px; }
-  #filter-section #result-section button:hover {
+  #filter-section #result-search button:hover {
     border-radius: 25px; }
-  #filter-section #result-section .card {
+  #filter-section #result-search .card {
     transition: ease-in 0.2s;
     border-radius: 20px;
     cursor: pointer; }
-    #filter-section #result-section .card img {
+    #filter-section #result-search .card img {
       height: 10rem;
       border-radius: 20px; }
-  #filter-section #result-section .card:hover {
+  #filter-section #result-search .card:hover {
     color: #FDFCFC;
     background-color: #DDAC72; }
 
 @media screen and (max-width: 991px) {
-  #result-section {
+  #result-search {
     margin-top: 8%; } }
 
 * {
