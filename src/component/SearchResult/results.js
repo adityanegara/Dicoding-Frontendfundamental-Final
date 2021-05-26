@@ -26,7 +26,7 @@ const results = [
     {
         id : 4,
         title : "Sirloin Steak",
-        img : "./img/pesto_pasta.jpg",
+        img : "./img/sirloin_steak.jpg",
         rating : "4.9",
         countRater : 21,
         creator : "Aliffadli"
