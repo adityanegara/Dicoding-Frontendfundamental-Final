@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass sass/main.scss css/style.css -w",
+    "sass": "node-sass sass/main.scss src/style/style.css -w",
     "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^5.2.6",
     "node-sass": "^6.0.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },
