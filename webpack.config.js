@@ -9,6 +9,7 @@ module.exports = {
     mode: "production",
     module: {
         rules: [
+            // Style and css loader
             {
                 test: /\.css$/,
                 use: [
@@ -17,6 +18,19 @@ module.exports = {
                     },
                     {
                         loader:"css-loader"
+                    }
+                ]
+            },
+            // Babel loader
+            {
+                test: /\.js$/,
+                exclude: "/node_modules/",
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options:{
+                            presets:["@babel/preset-env"]
+                        }
                     }
                 ]
             }
