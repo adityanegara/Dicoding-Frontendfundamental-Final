@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="icon" href="../img/F ya.png">
+    <title>Foodya</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">Foodya</a>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+        <ul class="nav-group">
+            <navbar-link link = "#" caption ="Featured Cuisine"></navbar-link>
+            <navbar-link link = "#" caption ="Popular Ingredients"></navbar-link>
+            <navbar-link link = "#" caption ="Local Cuisine"></navbar-link>
+        </ul>
+    </header>
+
+    <div id="cta-section">
+        <div class="col-12" >
+           <cta-card
+            title="30 Days Recipe Challenge"
+            description = "For 30 days straight challenge yourself to creating unique cuisine all around the globe"
+            background-image = "../img/cook.jpg"
+            button-caption = "How its gonna work">
+            </cta-card>
+        </div>
+    </div>
+
+    <div id="filter-section" class="mt-4 pb-5">
+        <div class="row">
+            <p class="h5">Cuisine By Categories</p>
+            <div id="food-category" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="result-search">
+                <search-bar placeholder = "Search cuisine" button-icon = "fas fa-search"></search-bar>
+                <div id="results-section">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="" href="https://mdbootstrap.com/">aditya_negara</a>
+        </div>   
+    </footer>
+    
+
+    
+        
+  
+   
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
