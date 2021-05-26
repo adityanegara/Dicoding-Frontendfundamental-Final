@@ -1,3 +1,4 @@
+
 import './animation/scroll_animation.js';
 import './component/Navbar/navbar-link.js';
 import './component/Navbar/navbar-list.js';
@@ -16,6 +17,8 @@ const renderResults = () =>{
     resultsListElement.results = results;
     resultsContainer.appendChild(resultsListElement);
 }
+
+
 
 const renderCategories = () =>{
     const foodCategoryContainer = document.querySelector("#food-category");
