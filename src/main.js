@@ -1,4 +1,5 @@
 import $ from "jquery";
+import { Tooltip, Toast, Popover } from 'bootstrap';
 import './animation/scroll_animation.js';
 import './component/Navbar/navbar-link.js';
 import './component/Navbar/navbar-list.js';
