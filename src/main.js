@@ -19,9 +19,31 @@ const renderResults = () =>{
     resultsContainer.appendChild(resultsListElement);
 }
 
+async function getCategories(){
+    try{
+        const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+        const responseJson = await response.json();
+        console.log(responseJson);
+        const categoriesResultArray = [];
+        responseJson.categories.forEach(category => {
+            categoriesResultArray.push(
+                {
+                    id : category.idCategory,
+                    title : category.strCategory,
+                    backgroundImage : category.strCategoryThumb
+                }
+            )
+        });
+        renderCategories(categoriesResultArray);
+    }catch(error){
+        console.log(error);
+    }
+}
 
 
-const renderCategories = () =>{
+
+
+const renderCategories = (categories = []) =>{
     const foodCategoryContainer =  $("#food-category").get(0);
     const categorieListElement =  document.createElement("categorie-list");
     categorieListElement.categories = categories;
@@ -38,8 +60,8 @@ const renderNavbar = () =>{
 
 
 
-renderCategories();
 renderResults();
+getCategories();
 
 
 

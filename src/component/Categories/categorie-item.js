@@ -4,6 +4,7 @@ class CategorieItem extends HTMLElement {
         this.render();
     }
     render(){
+        
         this.innerHTML = 
         `
             <div class="card"  style="background-image: url('${this._categorie.backgroundImage}');">

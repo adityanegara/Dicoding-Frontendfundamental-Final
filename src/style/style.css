@@ -7692,7 +7692,7 @@ textarea.form-control-lg {
   transition: 0.2s ease-in; }
 
 .btn-cta:hover {
-  background-color: #DDAC72;
+  background-color: #3A2315;
   color: #FDFCFC; }
 
 @media screen and (max-width: 767px) {
@@ -7707,10 +7707,14 @@ textarea.form-control-lg {
   margin-left: 10vw;
   margin-right: 10vw; }
   #filter-section #food-category .card {
-    color: #FDFCFC;
+    border-color: #D2D3D4;
+    background-color: #F0F1F2;
+    background-position: 65px 0px;
+    color: #6C757D;
     cursor: pointer;
     border-radius: 10px;
     padding: 0px;
+    background-repeat: no-repeat;
     background-size: cover;
     border: none;
     transition: ease-in 0.2s; }
