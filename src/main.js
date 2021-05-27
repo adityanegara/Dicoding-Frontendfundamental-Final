@@ -12,18 +12,12 @@ import links from './component/Navbar/navbar-links.js';
 import results from './component/SearchResult/results.js';
 
 
-const renderResults = () =>{
-    const resultsContainer =  $("#results-section").get(0);
-    const resultsListElement =  document.createElement("result-list");
-    resultsListElement.results = results;
-    resultsContainer.appendChild(resultsListElement);
-}
+
 
 async function getCategories(){
     try{
         const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
         const responseJson = await response.json();
-        console.log(responseJson);
         const categoriesResultArray = [];
         responseJson.categories.forEach(category => {
             categoriesResultArray.push(
@@ -40,10 +34,34 @@ async function getCategories(){
     }
 }
 
+async function getAmericanCuisine(){
+    try{
+        const response = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=American");
+        const responseJson = await response.json();        
+        const americanCuisineArray = [];
+        responseJson.meals.forEach(meal => {
+            americanCuisineArray.push(
+                {
+                    id : meal.idMeal,
+                    title : meal.strMeal,
+                    img : meal.strMealThumb,
+                    rating : "4.8",
+                    countRater : 28,
+                    creator : "Aditya Negara"
+                }
+            )
+        });
+        renderResults(americanCuisineArray);
+
+    }catch(error){
+        console.log(error);
+    }
+}
 
 
 
-const renderCategories = (categories = []) =>{
+
+const renderCategories = (categories) =>{
     const foodCategoryContainer =  $("#food-category").get(0);
     const categorieListElement =  document.createElement("categorie-list");
     categorieListElement.categories = categories;
@@ -58,10 +76,17 @@ const renderNavbar = () =>{
     navbarContainer.appendChild(navbarListElement);
 }
 
+const renderResults = (results) =>{
+    const resultsContainer =  $("#results-section").get(0);
+    const resultsListElement =  document.createElement("result-list");
+    resultsListElement.results = results;
+    resultsContainer.appendChild(resultsListElement);
+}
 
 
-renderResults();
+
 getCategories();
+getAmericanCuisine();
 
 
 
