@@ -1,5 +1,5 @@
 import "./categorie-item.js"
- 
+import  {addClassesToElement, elementBetween} from '../../helper.js';
  
 class CategorieList extends HTMLElement {
  set categories(categories) {
@@ -12,12 +12,10 @@ class CategorieList extends HTMLElement {
    this._categories.forEach(categorie => {
      const categorieElement = document.createElement("categorie-item");
      categorieElement.categorie = categorie;
-     categorieElement.classList.add("col-6");
-     categorieElement.classList.add("mt-2");
-     this.appendChild(categorieElement);
+     this.appendChild(addClassesToElement(categorieElement, 
+      ["col-6", "mt-2"]));
    })
-    const new_html = "<div class='row'>" + this.innerHTML + "</div>";
-    this.innerHTML = new_html;
+    this.innerHTML = elementBetween("<div class = 'row'>", this, "</div>");
  }
 
 
