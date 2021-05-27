@@ -11,10 +11,69 @@ import categories from './component/Categories/categories.js';
 import links from './component/Navbar/navbar-links.js';
 import results from './component/SearchResult/results.js';
 
+$('#search-button').click( () =>{
+//    console.log($('#search-input').val());
+    $("result-list").remove();
+    search($('#search-input').val());
+});
 
 
+$(document).on('click', '.categorie-card', function() {
+   console.log($(this).data('keyword')) ;
+   $("result-list").remove();
+   filterCategory($(this).data('keyword'));
+});
 
-async function getCategories(){
+
+const filterCategory = async (category) =>{
+    try{
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
+        const responseJson = await response.json();        
+        const searchCuisineArray = [];
+        responseJson.meals.forEach(meal => {
+            searchCuisineArray.push(
+                {
+                    id : meal.idMeal,
+                    title : meal.strMeal,
+                    img : meal.strMealThumb,
+                    rating : "4.8",
+                    countRater : 28,
+                    creator : "Aditya Negara"
+                }
+            )
+        });
+        renderResults(searchCuisineArray);
+
+    }catch(error){
+        console.log(error);
+    }
+}
+
+const search = async (keyword)=>{
+    try{
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`);
+        const responseJson = await response.json();        
+        const searchCuisineArray = [];
+        responseJson.meals.forEach(meal => {
+            searchCuisineArray.push(
+                {
+                    id : meal.idMeal,
+                    title : meal.strMeal,
+                    img : meal.strMealThumb,
+                    rating : "4.8",
+                    countRater : 28,
+                    creator : "Aditya Negara"
+                }
+            )
+        });
+        renderResults(searchCuisineArray);
+
+    }catch(error){
+        console.log(error);
+    }
+}
+
+const getCategories = async () => {
     try{
         const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
         const responseJson = await response.json();
@@ -34,7 +93,7 @@ async function getCategories(){
     }
 }
 
-async function getAmericanCuisine(){
+const getAmericanCuisine = async() =>{
     try{
         const response = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=American");
         const responseJson = await response.json();        

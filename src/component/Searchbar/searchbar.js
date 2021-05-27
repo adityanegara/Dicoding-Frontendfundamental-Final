@@ -9,11 +9,11 @@ class SearchBar extends HTMLElement {
         ` <div class="row" id="search-bar">
             <div class="col-10 ">
                 <div class="input-group" >
-                    <input type="text" class="form-control custom-input" " placeholder="${this.placeholder}">
+                    <input type="text" class="form-control custom-input" id="search-input"  " placeholder="${this.placeholder}">
                 </div>
             </div>
             <div class="col-2">
-                <button class="btn btn-dark"><i class="${this.buttonIcon}"></i></button>
+                <button class="btn btn-dark" id = "search-button"><i class="${this.buttonIcon}"></i></button>
             </div>
         </div>`
     }

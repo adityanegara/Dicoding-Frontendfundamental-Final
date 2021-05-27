@@ -7,7 +7,7 @@ class CategorieItem extends HTMLElement {
         
         this.innerHTML = 
         `
-            <div class="card"  style="background-image: url('${this._categorie.backgroundImage}');">
+            <div class="card categorie-card"  data-keyword = "${this._categorie.title}"  style="background-image: url('${this._categorie.backgroundImage}');">
                 <div class="card-body" >
                 <h5 class="card-title" >${this._categorie.title}</h5>
                 </div>
