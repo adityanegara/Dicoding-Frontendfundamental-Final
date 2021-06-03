@@ -4,7 +4,6 @@ class CtaCard extends HTMLElement {
         this.description = this.getAttribute("description") || null;
         this.backgroundImage = this.getAttribute("background-image") || null;
         this.buttonCaption = this.getAttribute("button-caption") || null;
-        console.log(this.backgroundImage);
         this.render();
     }
     render(){
@@ -31,5 +30,8 @@ class CtaCard extends HTMLElement {
             </div>
         </div>`
     }
+
+    
+    
    }
    customElements.define("cta-card", CtaCard);

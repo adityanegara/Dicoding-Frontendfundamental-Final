@@ -1,3 +1,1 @@
-1) Bug vscode dan sass watch
-   : Terdapat bug di sass watch dan vscode dimana pengguna harus mengsave berkali-kali agar
-     file sass dapat di covnvert ke ccss
+1) Production ada di dist/index.html

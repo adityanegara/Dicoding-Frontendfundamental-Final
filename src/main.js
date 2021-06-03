@@ -11,6 +11,10 @@ import categories from './component/Categories/categories.js';
 import links from './component/Navbar/navbar-links.js';
 import results from './component/SearchResult/results.js';
 
+
+
+
+
 $('#search-button').click( () =>{
 //    console.log($('#search-input').val());
     $("result-list").remove();
@@ -147,8 +151,7 @@ const renderResults = (results) =>{
 getCategories();
 getAmericanCuisine();
 
-
-
+    
 
 
 

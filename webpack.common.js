@@ -20,7 +20,12 @@ module.exports = {
                         loader: "css-loader"
                     }
                 ]
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
             }
+           
         ]
     },
     /* plugin */
